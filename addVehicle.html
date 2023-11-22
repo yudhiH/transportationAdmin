@@ -391,11 +391,11 @@
               <!-- <p>For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. </p> -->
 
               <!-- Custom Styled Validation -->
-              <form class="row g-3 needs-validation" novalidate>
+              <form  class="row g-3 needs-validation" novalidate>
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Vehicle Number</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <input type="text" name="vehicleNumber" class="form-control" id="validationCustom01" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -404,7 +404,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Capacity Of Vehicle</label>
                   <div class="col-sm-9">
-                    <input type="number" class="form-control" id="validationCustom01" value="" required>
+                    <input type="number" name="vehcileCapacity" class="form-control" id="validationCustom01" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -413,7 +413,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">RC Start Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="rcStartDate" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -422,7 +422,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">RC End Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="rcEndDate" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -431,7 +431,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Vehicle Insurance Start Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="insuranceStartDate" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -440,7 +440,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Vehicle Insurance End Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="insuranceEndDate" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -449,7 +449,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">PUC Start Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="pucStartDate" class="form-control" id="validationCustom02" value="" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -458,7 +458,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">PUC End Date</label>
                   <div class="col-sm-9">
-                    <input type="date" class="form-control" id="validationCustom02" value="" required>
+                    <input type="date" name="pucEndDate" class="form-control" id="validationCustom02" value="" required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
@@ -467,7 +467,7 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Select</label>
                   <div class="col-sm-9">
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="vehicleType" aria-label="Default select example">
                       <option selected="">Type Of Vehicle</option>
                       <option value="1">Milk Tanker</option>
                       <option value="2">Water Tanker</option>
@@ -478,14 +478,14 @@
                 <div class="row mb-3">
                   <label class="col-sm-3 col-form-label">Comment</label>
                   <div class="col-sm-9">
-                    <textarea class="form-control" id="validationCustom01" value="" required></textarea>
+                    <textarea class="form-control" name="comments" id="validationCustom01" value="" required></textarea>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
                   </div>  
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Add Details</button>
+                  <button class="btn btn-primary" name="submitBtn" type="submit">Add Details</button>
                 </div>
               </form><!-- End Custom Styled Validation -->
             </div>
